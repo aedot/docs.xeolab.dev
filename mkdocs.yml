@@ -5,11 +5,15 @@ nav:
     - Cloudflared: apps/cloudflared.md
     - Authelia: apps/authelia.md
     - Watchtower: apps/watchtower.md
+    - Influxdb: apps/influxdb.md
+    - Grafana: apps/grafana.md
   - Cheatsheets:
     - Docker:
       - Install Docker: cheatsheets/docker/installing-docker.md
+      - Docker Command: cheatsheets/docker/docker-command.md
     - SSH:
       - SSH Keys: cheatsheets/ssh/ssh-keys.md
+      - SSH Ubuntu Server: cheatsheets/ssh/ssh-client-setup-using-keys.md
     - ZSH: cheatsheets/zsh/zsh.md
     - GIT:
       - How to use git: cheatsheets/git/git.md

@@ -1,6 +1,6 @@
 ---
 title: Installing docker
-outdated: fasle
+outdated: false
 ---
 
 ## Installing Docker
