@@ -1,6 +1,10 @@
 
 nav: 
   - Home: index.md
+  - Apps:
+    - Cloudflared: apps/cloudflared.md
+    - Authelia: apps/authelia.md
+    - Watchtower: apps/watchtower.md
   - Cheatsheets:
     - Docker:
       - Install Docker: cheatsheets/docker/installing-docker.md
