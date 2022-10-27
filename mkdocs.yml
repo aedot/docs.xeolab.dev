@@ -7,6 +7,8 @@ nav:
     - Watchtower: apps/watchtower.md
     - Influxdb: apps/influxdb.md
     - Grafana: apps/grafana.md
+  - VMs:
+    - Gitlab CE: vms/gitlab.md
   - Cheatsheets:
     - Docker:
       - Install Docker: cheatsheets/docker/installing-docker.md
@@ -19,6 +21,8 @@ nav:
       - How to use git: cheatsheets/git/git.md
     - Markdown:
       - Build by badge: cheatsheets/markdown/built-by-badge.md
+  # - Others:
+  #   - Send Only Mail Server: others/set-up-sent-only-smtp-server.md
 
 
 

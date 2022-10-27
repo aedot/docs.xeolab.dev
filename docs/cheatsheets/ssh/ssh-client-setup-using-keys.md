@@ -1,5 +1,6 @@
 ---
-title: Ubuntu SSH Server: Permission Denied (publickey)
+title: Ubuntu SSH Server Permission Denied (publickey)
+outdated: false
 ---
 
 Check /etc/ssh/sshd_config file
