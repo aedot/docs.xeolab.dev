@@ -1,6 +1,6 @@
 
 nav: 
-  - Home: cheatsheets/markdown/built-by-badge.md
+  - Home: index.md
   - Apps:
     - Cloudflared: apps/cloudflared.md
     - Authelia: apps/authelia.md
