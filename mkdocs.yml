@@ -1,12 +1,14 @@
 
 nav: 
-  - Home: index.md
+  - Home: cheatsheets/markdown/built-by-badge.md
   - Apps:
     - Cloudflared: apps/cloudflared.md
     - Authelia: apps/authelia.md
     - Watchtower: apps/watchtower.md
     - Influxdb: apps/influxdb.md
     - Grafana: apps/grafana.md
+  - Linux:
+    - Ubuntu Samba: linux/ubuntusmb.md
   - VMs:
     - Gitlab CE: vms/gitlab.md
   - Cheatsheets:
@@ -19,8 +21,8 @@ nav:
     - ZSH: cheatsheets/zsh/zsh.md
     - GIT:
       - How to use git: cheatsheets/git/git.md
-    - Markdown:
-      - Build by badge: cheatsheets/markdown/built-by-badge.md
+   # - Markdown:
+    #  - Build by badge: cheatsheets/markdown/built-by-badge.md
   # - Others:
   #   - Send Only Mail Server: others/set-up-sent-only-smtp-server.md
 
