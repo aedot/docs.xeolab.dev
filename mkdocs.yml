@@ -7,6 +7,9 @@ nav:
     - Watchtower: apps/watchtower.md
     - Influxdb: apps/influxdb.md
     - Grafana: apps/grafana.md
+  - Cloud:
+    - Storage:
+      - Scaleway Object S3: cloud/storage/scaleway.md
   - Linux:
     - Ubuntu Samba: linux/ubuntusmb.md
   - VMs:
