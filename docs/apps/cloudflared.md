@@ -93,10 +93,10 @@ The next step will be to edit your domain DNS records.
     | Type | Name | Value | TTL | Proxy status |
     |------|------|-------|-----|--------|
     | CNAME | @ | UUID.cfargotunnel.com | Automatic | ![](/assets/cloudflare_status.png){width="36"} **Proxied**
-    | CNAME | sonarr | @ | Automatic | ![](/assets/cloudflare_status.png){width="36"} **Proxied**
-    | CNAME | plex | @ | Automatic | ![](/assets/cloudflare_status.png){width="36"} **Proxied**
-    | CNAME | radarr | @ | Automatic | ![](/assets/cloudflare_status.png){width="36"} **Proxied**
-    | CNAME | portainer | @ | Automatic | ![](/assets/cloudflare_status.png){width="36"} **Proxied**
+    | CNAME | sonarr | @ | Automatic | ![](/assets/cloudflare/cloudflare_status.png){width="36"} **Proxied**
+    | CNAME | plex | @ | Automatic | ![](/assets/cloudflare/cloudflare_status.png){width="36"} **Proxied**
+    | CNAME | radarr | @ | Automatic | ![](/assets/cloudflare/cloudflare_status.png){width="36"} **Proxied**
+    | CNAME | portainer | @ | Automatic | ![](/assets/cloudflare/cloudflare_status.png){width="36"} **Proxied**
 
 
 ## Troubleshooting
