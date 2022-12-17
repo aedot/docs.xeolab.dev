@@ -14,6 +14,7 @@ nav:
     - Ubuntu Samba: linux/ubuntusmb.md
   - VMs:
     - Gitlab CE: vms/gitlab.md
+    - Nextcloud: vms/nextcloud.md
   - Cheatsheets:
     - Docker:
       - Install Docker: cheatsheets/docker/installing-docker.md
