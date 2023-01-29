@@ -289,20 +289,70 @@ The remaining Nextcloud configuration tasks can be accomplished using the web in
     - In the Configure the database section, add information about the `nextcloud` database. Enter the user name and password for the account created in MariaDB earlier. The database name is `nextcloud`. Leave the final field set to `localhost`.
     - Click <b>Install</b> to complete the form.
 
-<INSERT SCREENSHOT>
-
 3. Nextcloud proceeds to set up the application. This might take a minute or two. On the next page, Nextcloud asks whether to install a set of recommended applications. Click <b>Install recommended apps</b> to continue.
 
     ![](/assets/nextcloud/nextcloud_recommendation.png){width="920"}
 
 4. Nextcloud displays a series of welcome slides. Click the right arrow symbol on the right-hand side of the page to walk through the slides. Read through each slide, recording any important information.
 
-<INSERT SCREENSHOT>
-
 5. On the final welcome page, select <b>Start using Nextcloud</b> to proceed to the Nextcloud dashboard.
-
-<INSERT SCREENSHOT>
 
 6. The browser now displays the Nextcloud Dashboard page.
 
-<INSERT SCREENSHOT>
+### Misc. Tweaks and Adjustments
+
+Correct the permissions of the config.php file
+
+We definitely wouldn’t want the config.php file to fall into the wrong hands, as it contains valuable setup information regarding our Nextcloud setup. Let’s adjust the permissions to better protect it.
+
+```
+sudo chmod 660 /var/www/html/nextcloud/config/config.php
+```
+
+```
+sudo chown root:www-data /var/www/html/nextcloud/config/config.php
+```
+
+Enable memory caching
+
+Edit the Nextcloud config file:
+
+```
+sudo nano /var/www/html/nextcloud/config/config.php
+```
+
+Add the following line to the bottom:
+
+```
+'memcache.local' => '\\OC\\Memcache\\APCu',
+```
+
+Resolving warnings pertaining to the default phone region
+
+Edit the Nextcloud config file:
+
+```
+sudo nano /var/www/nextcloud.learnlinux.cloud/config/config.php
+```
+
+Add the following line to the bottom of the file:
+
+```
+'default_phone_region' => 'US',
+```
+
+Enabling Strict Transport Security
+
+Edit the SSL config file for our Nextcloud installation:
+
+```
+sudo nano /etc/apache2/sites-available/default-ssl.conf
+```
+
+Add the following line after the ServerName line:
+
+```
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=15552000; includeSubDomains"
+</IfModule>
+```

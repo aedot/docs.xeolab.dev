@@ -15,7 +15,11 @@ nav:
   - VMs:
     - Gitlab CE: vms/gitlab.md
     - Nextcloud: vms/nextcloud.md
+  - Backup Solutions:
+    - Rclone: backupsolutions/rclone.md
   - Cheatsheets:
+    - Linux:
+      - Basic Command: cheatsheets/linux/basicmd.md
     - Docker:
       - Install Docker: cheatsheets/docker/installing-docker.md
       - Docker Command: cheatsheets/docker/docker-command.md
@@ -36,10 +40,10 @@ nav:
 
 
 repo_name: docs
-repo_url: https://github.com/aedot/docs.xeolab.homes
+repo_url: https://github.com/aedot/docs.xeolab.dev
 edit_uri: edit/dev/docs/
-site_name: !ENV [env,"xeolab Documentation"]
-site_url: !ENV [domain, "https://docs.xeolab.homes"]
+site_name: !ENV [env,"XeolabOS"]
+site_url: !ENV [domain, "https://docs.xeolab.dev"]
 site_description: xeolab Public Documentation
 
 
@@ -78,8 +82,8 @@ theme:
     - header.autohide
     - navigation.tracking
     - navigation.indexes
+    - navigation.sections
     - content.code.annotate
-    - toc.integrate
     - navigation.top
     - search.suggest
 
@@ -94,7 +98,9 @@ extra:
       link: https://github.com/aedot
     - icon: fontawesome/solid/paper-plane
       link: mailto:support@xeolab.homes
-  generator: false
+  generator: true
+
+copyright: Copyright &copy; 2023 aedot
 
 markdown_extensions:
   - toc:
